@@ -143,7 +143,6 @@ const currentSlide = computed<Slide>(() => slides[activeIndex.value] ?? fallback
     >
       <div class="mx-auto flex w-full max-w-8xl items-center justify-between px-4 py-4 md:px-8">
         <div class="flex items-center gap-3">
-          <div class="h-10 w-10 rounded-full bg-[var(--coffee-accent)]/20 ring-1 ring-[var(--coffee-accent)]/40" />
           <div>
             <p class="text-lg font-bold tracking-wide text-[var(--coffee-brown)]">Cafe Mộc</p>
             <p class="text-xs text-slate-500">Coffee & Bakery</p>
@@ -318,7 +317,7 @@ const currentSlide = computed<Slide>(() => slides[activeIndex.value] ?? fallback
             <p class="mt-6 max-w-xl text-lg/8 italic text-slate-900 md:text-xl/9">{{ block.description }}</p>
             <a
               href="#"
-              class="mt-8 inline-block border-b border-black pb-1 text-2xl/none font-semibold text-black transition hover:text-[var(--coffee-brown)] hover:border-[var(--coffee-brown)] md:text-3xl/none"
+              class="mt-8 inline-block border-b border-black pb-1 text-xl/none font-semibold text-black transition hover:text-[var(--coffee-brown)] hover:border-[var(--coffee-brown)] md:text-xl/none"
             >
               {{ block.cta }} »
             </a>
